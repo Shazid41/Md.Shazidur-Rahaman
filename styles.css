@@ -234,7 +234,23 @@ h2, h3 {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
     padding: 10px;
+    overflow: hidden; /* Prevent overflow */
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    text-align: center;
   }
 
   .skills-container, .projects-container, .reviews-container {
@@ -245,6 +261,13 @@ h2, h3 {
 
   .card {
     padding: 15px;
+  }
+
+  .about-content {
+    padding: 15px;
+  }
+}
+
   }
 
   .about-content {
